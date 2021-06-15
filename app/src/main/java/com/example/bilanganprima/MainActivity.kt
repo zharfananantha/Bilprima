@@ -32,7 +32,9 @@ class MainActivity : AppCompatActivity() {
             for (element in listAllNum) {
                 var cek = 0
                 for(i in 1..element) {
-                    if (element%i == 0)
+                    if (element == 1)
+                        cek += 2
+                    else if (element%i == 0)
                         cek++
                 }
                 if (cek == 2)
